@@ -47,4 +47,10 @@ public class LibraryTest {
         library.addBook(book5);
         assertEquals(4,library.getCollectionSize());
     }
+
+    @Test
+    public void canLendBook(){
+        library.lendBook(book1);
+        assertEquals(2,library.getCollectionSize());
+    }
 }

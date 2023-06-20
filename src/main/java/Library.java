@@ -21,4 +21,8 @@ public class Library {
             collection.add(book);
         }
     }
+    public void lendBook(Book book){
+        int foundIndex = collection.indexOf(book);
+        collection.remove(foundIndex);
+    }
 }
